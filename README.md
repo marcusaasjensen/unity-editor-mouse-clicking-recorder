@@ -52,14 +52,14 @@ And you will have this project Assets tree:
 Click on the "Mouse Clicking Recorder" GameObject and see the MouseClickingRecorder component.
 You can see I have already made a recording example tagged "recording_example" you can try in PlayMode.
 
-![alt text] (https://github.com/marcusaasjensen/editor-mouse-clicking-recorder/main/Images/mouseclickingrecorder_inspector.png "MouseClickingRecorder Inspector")
+![alt text] (https://github.com/marcusaasjensen/editor-mouse-clicking-recorder/raw/main/Images/mouseclickingrecorder_inspector.png "MouseClickingRecorder Inspector")
 
 It is simply a list of all the times recorded between each mouse clicks.
 
 Click on the "Recording Player" GameObject and see the RecordingPlayer component.
 It is the player that will allow us to play and replay the recording in PlayMode with an audio and a visual feedback.
 
-![alt text] (https://github.com/marcusaasjensen/editor-mouse-clicking-recorder/main/Images/recordingplayer_inspector.png "RecordingPlayer Inspector")
+![alt text] (https://github.com/marcusaasjensen/editor-mouse-clicking-recorder/raw/main/Images/recordingplayer_inspector.png "RecordingPlayer Inspector")
 
 Before playing the recording example in PlayMode, make sure to have 
 the MouseClickingRecorder GameObject's component referenced, 
@@ -73,7 +73,7 @@ Now, enter in PlayMode!
 
 *tum, tululum, tum, ...tum, tum!*
 
-![alt text] (https://github.com/marcusaasjensen/editor-mouse-clicking-recorder/main/Images/music.png "PlayMode Visual")
+![alt text] (https://github.com/marcusaasjensen/editor-mouse-clicking-recorder/raw/main/Images/music.png "PlayMode Visual")
 
 As you can see, you have a music note that appears and a *click* sound that plays exactly as my mouse clickings was recorded at the time.
 
@@ -85,26 +85,26 @@ Now, exit Play Mode, I will explain you how to record your own mouse clickings..
 First, go to the **MouseClickingRecorder** component of the "Mouse Clicking Recorder" GameObject. You can delete the recording example with the list options (-).
 Create a new empty element in the list and call its tag however you like.
 
-![alt text] (https://github.com/marcusaasjensen/editor-mouse-clicking-recorder/main/Images/new_recording.png "New Recording")
+![alt text] (https://github.com/marcusaasjensen/editor-mouse-clicking-recorder/raw/main/Images/new_recording.png "New Recording")
 
 Write it in the **RecordingTag** variable too, this way, it will only affect changes to this specific recording.
 
-![alt text] (https://github.com/marcusaasjensen/editor-mouse-clicking-recorder/main/Images/start.png "Recording Settings")
+![alt text] (https://github.com/marcusaasjensen/editor-mouse-clicking-recorder/raw/main/Images/start.png "Recording Settings")
 
 Set the variable **IsRecording** to true.
 
-![alt text] (https://github.com/marcusaasjensen/editor-mouse-clicking-recorder/main/Images/waiting.png "Console Waiting Message")
+![alt text] (https://github.com/marcusaasjensen/editor-mouse-clicking-recorder/raw/main/Images/waiting.png "Console Waiting Message")
 
 You will see a green message in the Console telling you it will start to record your mouse clickings when you do your first mouse click on the above button.
 Indeed, this button is the clicking zone. Then, when you are ready, start clicking at the rythm you want!
 
 You will see the list bellow getting bigger each time you click.
 
-![alt text] (https://github.com/marcusaasjensen/editor-mouse-clicking-recorder/main/Images/recorded.png "My New Recording")
+![alt text] (https://github.com/marcusaasjensen/editor-mouse-clicking-recorder/raw/main/Images/recorded.png "My New Recording")
 
 To stop the recording, simply set to false the **IsRecording** variable.
 
-![alt text] (https://github.com/marcusaasjensen/editor-mouse-clicking-recorder/main/Images/recording.png "Console Stop Message")
+![alt text] (https://github.com/marcusaasjensen/editor-mouse-clicking-recorder/raw/main/Images/recording.png "Console Stop Message")
 
 And then you are done!
 If you want to, you can change the placements of the different recorded times in the list or simply change things manually to be more precise. 
