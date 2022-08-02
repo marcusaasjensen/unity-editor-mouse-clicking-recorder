@@ -41,11 +41,11 @@ When opening the project, make sure to have the EditorMouseClickingRecorder scen
 
 You will see this Hierarchy:
 
-![alt text] (https://github.com/marcusaasjensen/editor-mouse-clicking-recorder/main/Images/hierarchy.png "Hierarchy")
+![alt text] (https://github.com/marcusaasjensen/editor-mouse-clicking-recorder/raw/main/Images/hierarchy.png "Hierarchy")
 
 And you will have this project Assets tree:
 
-![alt text] (https://github.com/marcusaasjensen/editor-mouse-clicking-recorder/main/Images/project.png "Project Assets Tree")
+![alt text] (https://github.com/marcusaasjensen/editor-mouse-clicking-recorder/raw/main/Images/project.png "Project Assets Tree")
 
 
 ## First Example Try
