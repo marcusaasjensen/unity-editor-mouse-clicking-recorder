@@ -1,4 +1,4 @@
-# editor-mouse-clicking-recorder
+# unity-editor-mouse-clicking-recorder
 
 Unity project made by Marcus Aas Jensen.
 
