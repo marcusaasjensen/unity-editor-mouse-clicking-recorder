@@ -23,12 +23,12 @@ Stay curious as platypuses!
 
 ## Introduction
 Hello Unity Game developers. 
-So you want to create a rythm game like **_Osu!_** or **_Just Shapes & Beats_**? Do you struggle making levels that require GameObjects to react at the very specific rythm of your music?
+So you want to create a rythm game like **_Osu!_** or **_Just Shapes & Beats_**? Do you struggle making levels that require GameObjects to react at the very specific rhythm of your music?
 Or you simply try to manually add the right timing through scripting or keyframe animations which seems to be pretty exhausting tasks.
 
-If so, I might have a solution that would fit accordingly to your needs and even save you a lot of time in creating your rythm games.
-I present you the **Mouse Clicking Recorder**, a Unity-based tool that allows you to record your mouse clickings and replay it according to your game mechanics.
-This way, you could simply listen to your music, record your mouse, and click with your mouse at the rythm of the music.
+If so, I might have a solution that would fit accordingly to your needs and even save you a lot of time in creating your rhythm games.
+I present you the **Mouse Clicking Recorder**, a Unity-based tool that allows you to record your mouse clicks and replay it according to your game mechanics.
+This way, you could simply listen to your music, record your mouse, and click with your mouse at the rhythm of the music.
 Then, you would be able to reuse or modify the timing between your clicks and implement it with your game's code.
 
 ## Guide
@@ -37,7 +37,7 @@ Before using this project, it is recommended to use **_Unity version 2021.3.0f1_
 ### Setup
 Download the project as a **ZIP file**, Unzip it and and open the *editor-mouse-clicking-recorder-main* folder with **Unity Hub**. It is a 3D project but when you understand how to use the tool, you can implement it in any other projects too.
 
-When opening the project, make sure to have the EditorMouseClickingRecorder scene opened in **_Assets > Scenes_**.
+When opening the project, make sure to have the **EditorMouseClickingRecorder** scene opened in **_Assets > Scenes_**.
 
 You will see this hierarchy:
 
@@ -75,11 +75,11 @@ Now, enter in PlayMode!
 
 ![](https://github.com/marcusaasjensen/editor-mouse-clicking-recorder/raw/main/Images/music.png "PlayMode Visual")
 
-As you can see, you have a music note that appears and a *click* sound that plays exactly as my mouse clickings was recorded at the time.
+As you can see, you have a music note that appears and a *click* sound that plays exactly as my mouse clicks were recorded at the time.
 
 If you want, you can replay the recording by right clicking on the **RecordingPlayer** component and select **_Play Recording (In Play Mode)_**.
 
-Now, exit Play Mode, I will explain you how to record your own mouse clickings...
+Now, exit Play Mode, I will explain you how to record your own mouse clicks...
 
 ### Recording your Own Mouse Clickings
 First, go to the **MouseClickingRecorder** component of the "Mouse Clicking Recorder" GameObject. You can delete the recording example with the list options (-).
@@ -95,8 +95,8 @@ Set the variable **IsRecording** to true.
 
 ![](https://github.com/marcusaasjensen/editor-mouse-clicking-recorder/raw/main/Images/waiting.png "Console Waiting Message")
 
-You will see a green message in the Console telling you it will start to record your mouse clickings when you do your first mouse click on the above button.
-Indeed, this button is the *clicking zone*. Then, when you are ready, start clicking at the rythm you want!
+You will see a green message in the Console telling you it will start to record your mouse clicks when you do your first mouse click on the above button.
+Indeed, this button is the *clicking zone*. Then, when you are ready, start clicking at the rhythm you want!
 
 You will see the list bellow getting bigger each time you click.
 
@@ -111,7 +111,7 @@ If you want to, you can change the placements of the different recorded times in
 
 You can also start another recording session on an **existing recording**. 
 Be cautious, **the first click will be the last mouse click you have made when you have lastly recorded this list**. 
-So remember this to stay in rythm!
+So remember this to stay in rhythm!
 
 ## Play your Own Recording
 Now that you have finished recording yourself, it's time to hear and see how it shows up with the "Recording Player" GameObject. 
