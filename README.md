@@ -35,7 +35,7 @@ Then, you would be able to reuse or modify the timing between your clicks and im
 Before using this project, it is recommended to use **_Unity version 2021.3.0f1_**. Of course, you can try other versions, but I haven't tested it myself.
 
 ### Setup
-Download the project and open it with the Unity Hub. It is a 3D project but when you understand how to use the tool, you can implement it in any other projects too.
+Download the project as a ZIP file, Unzip it and and open the editor-mouse-clicking-recorder-main folder with Unity Hub. It is a 3D project but when you understand how to use the tool, you can implement it in any other projects too.
 
 When opening the project, make sure to have the EditorMouseClickingRecorder scene opened in **_Assets > Scenes_**.
 
