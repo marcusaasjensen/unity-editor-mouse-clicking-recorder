@@ -24,7 +24,7 @@ Stay curious as platypuses!
 ## Introduction
 Hello Unity Game developers. 
 So you want to create a rythm game like **_Osu!_** or **_Just Shapes & Beats_**? Do you struggle making levels that require GameObjects to react at the very specific rhythm of your music?
-Or you simply try to manually add the right timing through scripting or keyframe animations which seems to be pretty exhausting tasks.
+Or you simply try to manually add the right timing through scripting or keyframe animations which seem to be pretty exhausting tasks.
 
 If so, I might have a solution that would fit accordingly to your needs and even save you a lot of time in creating your rhythm games.
 I present you the **Mouse Clicking Recorder**, a Unity-based tool that allows you to record your mouse clicks and replay it according to your game mechanics.
