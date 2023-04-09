@@ -49,8 +49,5 @@ public class ByMarcusAasJensen : MonoBehaviour
     public readonly string instagramLink = "https://www.instagram.com/marcus_aasjensen";
     public readonly string githubLink = "https://github.com/marcusaasjensen";
     public readonly string itchioLink = "https://marcus-a.itch.io";
-    void Start()
-    {
-        this.gameObject.SetActive(false);
-    }
+    private void Start() => this.gameObject.SetActive(false);
 }

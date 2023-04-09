@@ -28,25 +28,23 @@ public class MouseClickingRecorder : MonoBehaviour
     public List<Recording> recordingList;
 
     public Dictionary<string, List<double>> recordingDictionary;
+    public static MouseClickingRecorder Instance { get; private set; }
 
-    public static MouseClickingRecorder Instance;
+    private double _timeOffset;
+    private double _timer;
 
-    double timeOffset;
-    double timer;
+    private bool _hasStartedRecording;
+    private bool _isFirstClick;
 
-    bool hasStartedRecording;
-    bool isFirstClick;
-
-    void Awake() {
+    private void Awake() 
+    {
         #region Singleton
         if (Instance == null) Instance = this;
         #endregion
 
         recordingDictionary = new Dictionary<string, List<double>>();
-        foreach(Recording recording in recordingList)
-        {
+        foreach(var recording in recordingList)
             recordingDictionary.Add(recording.tag, recording.timeBetweenClicks);
-        }
     }
 
     /// <summary>
@@ -56,10 +54,10 @@ public class MouseClickingRecorder : MonoBehaviour
     /// <returns></returns>
     public Recording ContainsRecordingWithTag(string tag)
     {
-        foreach(Recording recording in recordingList)
-        {
-            if(recording.tag == tag) return recording;
-        }
+        foreach(var recording in recordingList)
+            if(recording.tag == tag) 
+                return recording;
+        
         return null;
     }
 
@@ -73,32 +71,32 @@ public class MouseClickingRecorder : MonoBehaviour
             return;
         }
 
-        if (hasStartedRecording) return;
-        hasStartedRecording = true;
-        isFirstClick = true;
+        if (_hasStartedRecording) return;
+        _hasStartedRecording = true;
+        _isFirstClick = true;
 
         Debug.Log($"<color=#AAFF00>Waiting for the first click before starting recording...</color>");
     }
 
     public void StopRecording()
     {
-        if (hasStartedRecording)
+        if (_hasStartedRecording)
         {
             ContainsRecordingWithTag(recordingTag).timeBetweenClicks.Add(0);
             Debug.Log($"<color=#AAFF00>Recording stopped.</color>"); 
         }
-        hasStartedRecording = false;
-        timer = 0;
+        _hasStartedRecording = false;
+        _timer = 0;
     }
-
+#if UNITY_EDITOR
     public void AddKeyFrame()
     {
-        List<double> keyFrameList = ContainsRecordingWithTag(recordingTag).timeBetweenClicks;
+        var keyFrameList = ContainsRecordingWithTag(recordingTag).timeBetweenClicks;
 
-        if (isFirstClick)
+        if (_isFirstClick)
         {
-            timeOffset = EditorApplication.timeSinceStartup;
-            isFirstClick = false;
+            _timeOffset = EditorApplication.timeSinceStartup;
+            _isFirstClick = false;
 
             if (keyFrameList.Count > 0 && keyFrameList[^1] == 0)
                 keyFrameList.RemoveAt(keyFrameList.Count-1);
@@ -110,10 +108,11 @@ public class MouseClickingRecorder : MonoBehaviour
             return;
         }
 
-        double previousTime = timer;
-        timer = EditorApplication.timeSinceStartup - timeOffset;
-        double timeBetweenTwoClicks = timer - previousTime;
+        var previousTime = _timer;
+        _timer = EditorApplication.timeSinceStartup - _timeOffset;
+        var timeBetweenTwoClicks = _timer - previousTime;
 
         keyFrameList.Add(timeBetweenTwoClicks);
     }
+#endif
 }

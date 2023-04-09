@@ -45,7 +45,7 @@ public class RecordingPlayer : MonoBehaviour
     [Min(0)]
     public float appearingTime = .2f; // Optional
 
-    void Start()
+    private void Start()
     {
         mouseClickingRecorder = MouseClickingRecorder.Instance;
         visualFeedback.SetActive(false);
@@ -63,7 +63,7 @@ public class RecordingPlayer : MonoBehaviour
     /// <summary>
     /// Function you can use during Play Mode to replay the recording by right clicking on the script and choosing "Play Recording (In Play Mode)". 
     /// </summary>
-    void PlayCurrentRecording()
+    private void PlayCurrentRecording()
     {
         if (mouseClickingRecorder.ContainsRecordingWithTag(recordingTagToPlay) == null)
         {
@@ -77,11 +77,11 @@ public class RecordingPlayer : MonoBehaviour
     /// Function you will need to play the recording you want.
     /// </summary>
     /// <param name="tag">Tag of the recording you want to play.</param>
-    IEnumerator PlayRecording(string tag)
+    private IEnumerator PlayRecording(string tag)
     {
         yield return new WaitForSeconds(timeBeforeStarting); // Optional
-        List<double> recording = mouseClickingRecorder.recordingDictionary[tag];
-        for (int i = 1; i < recording.Count; i++)
+        var recording = mouseClickingRecorder.recordingDictionary[tag];
+        for (var i = 1; i < recording.Count; i++)
         {
             PlayFeedbacks(); // This is the function you would change according to your needs.
             yield return new WaitForSeconds((float) recording[i]);
@@ -90,13 +90,13 @@ public class RecordingPlayer : MonoBehaviour
     /// <summary>
     /// Function defining what will happen at each mouse click played.
     /// </summary>
-    void PlayFeedbacks()
+    private void PlayFeedbacks()
     {
         if (visualFeedback != null) StartCoroutine(Appear());
         if (audioFeedback != null) AudioSource.PlayClipAtPoint(audioFeedback, transform.position);
     }
 
-    IEnumerator Appear()
+    private IEnumerator Appear()
     {
         visualFeedback.SetActive(true);
         yield return new WaitForSeconds(appearingTime);

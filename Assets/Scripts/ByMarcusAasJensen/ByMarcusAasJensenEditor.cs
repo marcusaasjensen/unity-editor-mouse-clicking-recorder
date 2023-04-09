@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEditor;
 
+#if UNITY_EDITOR
 [CustomEditor(typeof(ByMarcusAasJensen))]
 public class ByMarcusAasJensenEditor : Editor
 {
@@ -20,3 +21,5 @@ public class ByMarcusAasJensenEditor : Editor
         if (GUILayout.Button("Itchio /marcus-a")) { Application.OpenURL(byMarcusAasJensen.itchioLink); }
     }
 }
+
+#endif

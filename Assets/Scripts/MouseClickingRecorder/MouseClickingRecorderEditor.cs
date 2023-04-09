@@ -1,6 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
+#if UNITY_EDITOR
 [CustomEditor(typeof(MouseClickingRecorder))]
 public class MouseClickingRecorderEditor : Editor
 {
@@ -17,10 +18,12 @@ public class MouseClickingRecorderEditor : Editor
 
         if (isRecording) 
             mouseClickingRecorder.StartRecording();
-        else 
+        else
             mouseClickingRecorder.StopRecording();
 
         if (GUILayout.Button(new GUIContent("Click Me", "Click this button to record your mouse clicks."), GUILayout.Height(100)) && isRecording)
             mouseClickingRecorder.AddKeyFrame();
     }
 }
+
+#endif
