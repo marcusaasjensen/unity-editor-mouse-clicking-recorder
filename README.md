@@ -3,21 +3,21 @@
 Unity project made by Marcus Aas Jensen.
 
 You can share this project as long as you mention my complete name in one of the files project.
-If you encounter any major bugs or issues by using this project, you can contact me via my email: aasjensenm@gmail.com
+If you encounter any major bugs or issues by using this project, you can contact me via my email: marcusjensendev@gmail.com
 
 ## My links
 You can support me by following me on
 
-Youtube: https://www.youtube.com/MarcusAasJensen_
+Youtube: https://www.youtube.com/marcusjensendev
 
-Instagram: https://www.instagram.com/marcus_aasjensen
+Instagram: https://www.instagram.com/marcusjensendev
 
 Github: https://github.com/marcusaasjensen
 
-Itchio: https://marcus-a.itch.io
+Itchio: https://marcusjensen.itch.io
 
 Or, you can simply share this hyperlink to my linktree:
-https://linktr.ee/marcus_a
+https://linktr.ee/marcusjensen
 
 Stay curious as platypuses!
 
