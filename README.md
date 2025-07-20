@@ -8,9 +8,9 @@ If you encounter any major bugs or issues by using this project, you can contact
 ## My links
 You can support me by following me on
 
-Youtube: https://www.youtube.com/marcusjensendev
+Youtube: https://www.youtube.com/@marcusjensendev
 
-Instagram: https://www.instagram.com/@marcusjensendev
+Instagram: https://www.instagram.com/marcusjensendev
 
 Github: https://github.com/marcusaasjensen
 
