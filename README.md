@@ -10,7 +10,7 @@ You can support me by following me on
 
 Youtube: https://www.youtube.com/marcusjensendev
 
-Instagram: https://www.instagram.com/marcusjensendev
+Instagram: https://www.instagram.com/@marcusjensendev
 
 Github: https://github.com/marcusaasjensen
 
